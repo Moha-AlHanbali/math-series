@@ -1,7 +1,8 @@
 
 def fibonacci(n:int):
     """
-    This function takes the parameter (n), a positive integer value, and returns the return the (n)th value in the fibonacci series.
+    This function takes the parameter (n), a positive integer value.
+    It returns the return the (n)th value in the fibonacci series.
     n: int
     return: int
     """
@@ -22,7 +23,8 @@ def fibonacci(n:int):
 
 def lucas(n:int):
     """
-    This function takes the parameter (n), a positive integer value, and returns the return the (n)th value in the lucas series.
+    This function takes the parameter (n), a positive integer value.
+    It returns the return the (n)th value in the lucas series.
     n: int
     return: int
     """
@@ -43,9 +45,10 @@ def lucas(n:int):
     # Return Value
     return (lucas(n-1) + lucas(n-2))
 
+
 def sum_series(n, a = 0, b = 1):
     """
-        This function takes the parameters (n, a, b), positive integer values. 
+        This function takes the parameters (n), a positive integer values and (a, b) , optional integer values. 
         It returns the return the (n)th value in the fibonacci series if (a = 0) and (b = 1).
         It returns the return the (n)th value in the lucas series if (a = 2) and (b = 1).
         It returns the return the (n)th value in a new series if (a and b) have different values.
@@ -63,6 +66,9 @@ def sum_series(n, a = 0, b = 1):
        return lucas(n)
 
     # Special Cases
+    if n < 0:
+        return ("n has to be a positive integer")
+
     if n == 0:
         return a
 
@@ -80,4 +86,6 @@ def sum_series(n, a = 0, b = 1):
 
 
 # if __name__ == "__main__":
-#     fibonacci(n)
+    # fibonacci(n)
+    # lucas(n)
+    # sum_series(n, a ,b)

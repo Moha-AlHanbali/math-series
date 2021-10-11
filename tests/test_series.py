@@ -386,3 +386,30 @@ def test_sum_series_custom_sequence_9():
 
     #Assert
     assert expected == actual
+
+def test_sum_series_custom_sequence_special_5():
+
+    #Arrange
+    n = 5
+    a = -2
+    b = 6
+    expected = 24
+
+    #Act
+    actual = sum_series(n, a, b)
+
+    #Assert
+    assert expected == actual
+
+def test_sum_series_return_correct_number_for_minus_input_2():
+    #Arrange
+    n = -2
+    a = 2
+    b = 6
+    expected = "n has to be a positive integer"
+
+    #Act
+    actual = sum_series(n, a, b)
+
+    #Assert
+    assert expected == actual
