@@ -129,3 +129,36 @@ def test_lucas_returns_a_value():
 
     #Assert
     assert expected == actual
+
+def test_lucas_special_case_0():
+    #Arrange
+    n = 0
+    expected = 2
+
+    #Act
+    actual = lucas(n)
+
+    #Assert
+    assert expected == actual
+
+def test_lucas_special_case_1():
+    #Arrange
+    n = 1
+    expected = 1
+
+    #Act
+    actual = lucas(n)
+
+    #Assert
+    assert expected == actual
+
+def test_lucas_special_case_2():
+    #Arrange
+    n = 2
+    expected = 3
+
+    #Act
+    actual = lucas(n)
+
+    #Assert
+    assert expected == actual
