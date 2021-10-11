@@ -302,3 +302,31 @@ def test_sum_series_return_lucas_sequence_6():
 
     #Assert
     assert expected == actual
+
+def test_sum_series_special_case_2_3():
+
+    #Arrange
+    n = 2
+    a = 2
+    b = 3
+    expected = 2
+
+    #Act
+    actual = sum_series(n, a, b)
+
+    #Assert
+    assert expected == actual
+
+def test_sum_series_special_case_3_2():
+
+    #Arrange
+    n = 2
+    a = 3
+    b = 2
+    expected = 2
+
+    #Act
+    actual = sum_series(n, a, b)
+
+    #Assert
+    assert expected == actual

@@ -64,6 +64,7 @@ def sum_series(n, a = 0, b = 1):
         return a
     if n == b:
         return b
+    return (sum_series(n-1) + sum_series(n-2))
     
 
 
