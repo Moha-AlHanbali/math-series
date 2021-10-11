@@ -1,8 +1,10 @@
 from math_series import __version__
-from math_series.series import fibonacci
+from math_series.series import fibonacci, lucas
 
 def test_version():
     assert __version__ == '0.1.0'
+
+# Fibonacci Function Tests
 
 def test_fibonacci_returns_a_value():
     #Arrange
@@ -88,6 +90,42 @@ def test_fibonacci_return_correct_number_for_6():
 
     #Act
     actual = fibonacci(n)
+
+    #Assert
+    assert expected == actual
+
+def test_fibonacci_return_correct_number_for_minus_input_1():
+    #Arrange
+    n = -1
+    expected = "n has to be a positive integer"
+
+    #Act
+    actual = fibonacci(n)
+
+    #Assert
+    assert expected == actual
+
+def test_fibonacci_return_correct_number_for_minus_input_2():
+    #Arrange
+    n = -2
+    expected = "n has to be a positive integer"
+
+    #Act
+    actual = fibonacci(n)
+
+    #Assert
+    assert expected == actual
+
+
+# Lucas Function Tests
+
+def test_lucas_returns_a_value():
+    #Arrange
+    n = 1
+    expected = 1
+
+    #Act
+    actual = lucas(n)
 
     #Assert
     assert expected == actual
