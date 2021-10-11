@@ -54,17 +54,26 @@ def sum_series(n, a = 0, b = 1):
         b: int
         retrun: int
     """
+    # Fibonacci Case
     if a == 0 and b == 1:
        return fibonacci(n)
     
+    # Lucas Case
     if a == 2 and b == 1:
        return lucas(n)
 
-    if n == a:
+    # Special Cases
+    if n == 0:
         return a
-    if n == b:
+
+    if n == 1:
         return b
-    return (sum_series(n-1) + sum_series(n-2))
+
+    if n == 2:
+        return a + b
+
+    # Return Value
+    return (sum_series(n-1, a, b) + sum_series(n-2, a, b))
     
 
 
