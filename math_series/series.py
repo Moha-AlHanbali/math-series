@@ -43,6 +43,12 @@ def lucas(n:int):
     # Return Value
     return (fibonacci(n-1) + fibonacci(n-2))
 
+def sum_series(n, a = 0, b = 1):
+    if a == 0 and b == 1:
+       return fibonacci(n)
+    
+    if a == 2 and b == 1:
+       return lucas(n)
 
 
 
