@@ -28,6 +28,9 @@ def lucas(n:int):
     """
 
     # Special Cases
+    if n < 0:
+        return ("n has to be a positive integer")
+        
     if n == 0:
         return 2
 

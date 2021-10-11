@@ -206,3 +206,25 @@ def test_lucas_return_correct_number_for_6():
 
     #Assert
     assert expected == actual
+
+def test_lucas_return_correct_number_for_minus_input_1():
+    #Arrange
+    n = -1
+    expected = "n has to be a positive integer"
+
+    #Act
+    actual = lucas(n)
+
+    #Assert
+    assert expected == actual
+
+def test_lucas_return_correct_number_for_minus_input_2():
+    #Arrange
+    n = -2
+    expected = "n has to be a positive integer"
+
+    #Act
+    actual = lucas(n)
+
+    #Assert
+    assert expected == actual
