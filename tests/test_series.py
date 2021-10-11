@@ -166,7 +166,7 @@ def test_lucas_special_case_2():
 def test_lucas_return_correct_number_for_3():
     #Arrange
     n = 3
-    expected = 2
+    expected = 4
 
     #Act
     actual = lucas(n)
@@ -177,7 +177,7 @@ def test_lucas_return_correct_number_for_3():
 def test_lucas_return_correct_number_for_4():
     #Arrange
     n = 4
-    expected = 3
+    expected = 7
 
     #Act
     actual = lucas(n)
@@ -188,7 +188,7 @@ def test_lucas_return_correct_number_for_4():
 def test_lucas_return_correct_number_for_5():
     #Arrange
     n = 5
-    expected = 5
+    expected = 11
 
     #Act
     actual = lucas(n)
@@ -199,7 +199,7 @@ def test_lucas_return_correct_number_for_5():
 def test_lucas_return_correct_number_for_6():
     #Arrange
     n = 6
-    expected = 8
+    expected = 18
 
     #Act
     actual = lucas(n)
@@ -269,7 +269,7 @@ def test_sum_series_return_lucas_sequence_3():
     n = 3
     a = 2
     b = 1
-    expected = 2
+    expected = 4
 
     #Act
     actual = sum_series(n, a, b)
@@ -282,7 +282,7 @@ def test_sum_series_return_lucas_sequence_4():
     n = 4
     a = 2
     b = 1
-    expected = 3
+    expected = 7
 
     #Act
     actual = sum_series(n, a, b)
@@ -290,12 +290,12 @@ def test_sum_series_return_lucas_sequence_4():
     #Assert
     assert expected == actual
 
-def test_sum_series_return_lucas_sequence_4():
+def test_sum_series_return_lucas_sequence_6():
     #Arrange
     n = 6
     a = 2
     b = 1
-    expected = 8
+    expected = 18
 
     #Act
     actual = sum_series(n, a, b)
