@@ -37,8 +37,8 @@ def lucas(n:int):
     if n == 2:
         return 3
 
-    return n
-
+    # Return Value
+    return (fibonacci(n-1) + fibonacci(n-2))
 
 
 

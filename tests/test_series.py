@@ -162,3 +162,47 @@ def test_lucas_special_case_2():
 
     #Assert
     assert expected == actual
+
+def test_lucas_return_correct_number_for_3():
+    #Arrange
+    n = 3
+    expected = 2
+
+    #Act
+    actual = lucas(n)
+
+    #Assert
+    assert expected == actual
+
+def test_lucas_return_correct_number_for_4():
+    #Arrange
+    n = 4
+    expected = 3
+
+    #Act
+    actual = lucas(n)
+
+    #Assert
+    assert expected == actual
+
+def test_lucas_return_correct_number_for_5():
+    #Arrange
+    n = 5
+    expected = 5
+
+    #Act
+    actual = lucas(n)
+
+    #Assert
+    assert expected == actual
+
+def test_lucas_return_correct_number_for_6():
+    #Arrange
+    n = 6
+    expected = 8
+
+    #Act
+    actual = lucas(n)
+
+    #Assert
+    assert expected == actual
