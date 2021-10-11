@@ -231,13 +231,74 @@ def test_lucas_return_correct_number_for_minus_input_2():
 
 # sum_series Function Tests:
 
-def test_sum_series_return_fibonacci_sequence():
+def test_sum_series_return_fibonacci_sequence_3():
     #Arrange
     n = 3
     expected = 2
 
     #Act
     actual = sum_series(n)
+
+    #Assert
+    assert expected == actual
+
+def test_sum_series_return_fibonacci_sequence_4():
+    #Arrange
+    n = 4
+    expected = 3
+
+    #Act
+    actual = sum_series(n)
+
+    #Assert
+    assert expected == actual
+
+def test_sum_series_return_fibonacci_sequence_6():
+    #Arrange
+    n = 6
+    expected = 8
+
+    #Act
+    actual = sum_series(n)
+
+    #Assert
+    assert expected == actual
+
+def test_sum_series_return_lucas_sequence_3():
+    #Arrange
+    n = 3
+    a = 2
+    b = 1
+    expected = 2
+
+    #Act
+    actual = sum_series(n, a, b)
+
+    #Assert
+    assert expected == actual
+
+def test_sum_series_return_lucas_sequence_4():
+    #Arrange
+    n = 4
+    a = 2
+    b = 1
+    expected = 3
+
+    #Act
+    actual = sum_series(n, a, b)
+
+    #Assert
+    assert expected == actual
+
+def test_sum_series_return_lucas_sequence_4():
+    #Arrange
+    n = 6
+    a = 2
+    b = 1
+    expected = 8
+
+    #Act
+    actual = sum_series(n, a, b)
 
     #Assert
     assert expected == actual
